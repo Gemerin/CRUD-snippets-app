@@ -1,0 +1,21 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<h1>Update Snippet</h1>
+<form method="post" action="./snippets/<%= viewData?.id %>/update">
+    <div>
+        <label for="titleInput">
+            Title
+        </label>
+        <input type="text" class="form-control" id="titleInput" name="title" placeholder="Update title here" value="<%= viewData?.title %>" required />
+    </div>
+    <div>
+        <label for="contentInput">
+            Content
+        </label>
+        <textarea class="form-control" id="contentInput" name="content" placeholder="Update content here" required><%= viewData?.content %></textarea>
+    </div>
+    <div>
+        <button class="btn" type="submit">Update</button>
+    </div>
+</form>

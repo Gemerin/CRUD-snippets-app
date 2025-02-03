@@ -1,0 +1,17 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<h1>Create Snippet</h1>
+<form method="post" action="./snippets/create">
+    <div>
+        <label class="form-label" for="titleInput">Title</label>
+        <input type="text" class="form-control" id="titleInput" name="title" required />
+    </div>
+    <div>
+        <label class="form-label" for="contentInput">Content</label>
+        <textarea class="form-control" id="contentInput" name="content" required></textarea>
+    </div>
+    <div>
+        <button class="btn" type="submit">Create</button>
+    </div>
+</form>

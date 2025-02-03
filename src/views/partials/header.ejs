@@ -1,0 +1,20 @@
+<header>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <nav>
+        <div class="container">
+            <img >
+            <div class="navbar-links">
+                <a href="./">Home</a>
+                <a href="./snippets">List</a>
+                <a href="./snippets/create">Create</a>
+                <% if (user) { %>
+                <a href="./user/logout">Logout</a>
+                <% } else { %> 
+                <a href="./user/login">Login</a>
+                <% } %>
+            </div>
+        </div>
+    </nav>
+</header>

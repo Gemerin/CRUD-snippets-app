@@ -1,0 +1,37 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<h1>Snippets</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Content</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% if (viewData?.snippets?.length) { %>
+            <% for (const snippet of viewData.snippets) { %>
+                <tr>
+                    <td>
+                        <%= snippet.title %>
+                    </td>
+                    <td class="containerSnip">
+                       <pre><code><%= snippet.content %></code></pre>
+                    </td>
+                    <td>
+                        <a href="./snippets/<%= snippet.id %>/view">View</a>
+                        <a href="./snippets/<%= snippet.id %>/update">Update</a>
+                        <a href="./snippets/<%= snippet.id %>/delete">Delete</a>
+                    </td>
+                </tr>
+                <% } %>
+                    <% } else { %>
+                        <tr>
+                            <td>
+                                There are no snippets to display
+                            </td>
+                        </tr>
+                        <% } %>
+    </tbody>
+</table>

@@ -1,0 +1,22 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<h1>Delete Snippet</h1>
+<form method="post" action="./snippets/<%= viewData?.id %>/delete">
+    <input type="hidden" name="id" value="<%= viewData?.id %>" />
+    <div>
+        <label for="titleInput">
+            Title
+        </label>
+        <input class="form-control" type="text" id="titleInput" value="<%= viewData?.title %>" disabled />
+    </div>
+    <div>
+        <label for="contentInput">
+            Content
+        </label>
+        <textarea class="form-control" id="contentInput" disabled><%= viewData?.content %></textarea>
+    </div>
+    <div>
+        <button class="btn" type="submit" autofocus="autofocus">Delete</button>
+    </div>
+</form>
