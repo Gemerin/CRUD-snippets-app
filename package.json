@@ -1,5 +1,5 @@
 {
-  "name": "assignment-b1-crud-snippets",
+  "name": "crud-snippets",
   "version": "1.0.0",
   "description": "A web application to manage code [snippets]. The web application will use the Node.js platform, Express as the application framework, and Mongoose as the object data modeling (ODM) library for MongoDB.",
   "type": "module",
